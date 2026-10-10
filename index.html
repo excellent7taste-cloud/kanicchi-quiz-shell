@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#fff1d8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="かにっちクイズ王">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <title>かにっちクイズ王アプリ・教材を読み込む</title>
+</head>
+<body>
+  <main class="card">
+    <div class="mark" aria-hidden="true">ク</div>
+    <h1>かにっちクイズ王アプリ</h1>
+    <p class="lead">iPhoneに保存した教材ZIPを選んで、圏外でも遊べるようにします。</p>
+    <div class="steps"><span>① PCから教材ZIPを転送</span><span>② この画面で読み込む</span><span>③ 機内モードで確認</span></div>
+    <label class="file-label" for="pack-file">教材ZIPを選ぶ</label>
+    <input id="pack-file" type="file" accept=".zip,application/zip">
+    <button id="import-button" type="button" disabled>このiPhoneへ保存する</button>
+    <progress id="progress" max="1" value="0" hidden></progress>
+    <p id="status" role="status" aria-live="polite">準備中…</p>
+    <a id="play-link" class="play-link" href="app/index.html" hidden>クイズを始める →</a>
+    <p class="note">保存中は画面を閉じず、iPhoneをロックしないでください。教材は公開サイトへ送信せず、このiPhoneのWebアプリ用保存領域に入れます。</p>
+  </main>
+  <script src="import.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,16 @@
+{
+  "name": "かにっちクイズ王アプリ",
+  "short_name": "かにっちクイズ王",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fffaf0",
+  "theme_color": "#fff1d8",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
